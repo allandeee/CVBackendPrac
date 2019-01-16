@@ -15,6 +15,10 @@ public class Main {
 
         for (int i=0; i<jsonArr.length(); i++) {
             JSONObject json = jsonArr.getJSONObject(i);
+            String [] tags = new String [json.getJSONArray("tags").length()];
+            for (int j=0; j<json.getJSONArray("tags").length(); j++ ) {
+                tags[j] = json.getJSONArray("tags").getString(j).toLowerCase();
+            }
             allVideos.add(new Video(
                     json.getString("name"),
                     json.getInt("duration"),
@@ -23,7 +27,7 @@ public class Main {
                     json.getInt("id"),
                     json.getString("thumbnail"),
                     json.getString("folder"),
-                    json.getJSONArray("tags")
+                    tags
             ));
         }
 

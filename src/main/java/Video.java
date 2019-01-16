@@ -1,6 +1,7 @@
 import org.json.JSONArray;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 
 public class Video {
@@ -11,11 +12,11 @@ public class Video {
     private int id;
     private String thumb;
     private String folder;  // folder path
-    private JSONArray tags;    // will be handled accordingly in getter
+    private String[] tags;    // will be handled accordingly in getter
 
     public Video (String name, int duration, String desc,
                  String dateCreated, int id, String thumb,
-                 String folder, JSONArray tags) {
+                 String folder, String[] tags) {
         this.name = name;
         this.duration = duration;
         this.desc = desc;
@@ -36,7 +37,7 @@ public class Video {
                 ", id=" + id + '\'' +
                 ", thumbnail=" + thumb + '\'' +
                 ", folder=" + folder + '\'' +
-                ", tags=" + tags +
+                ", tags=" + Arrays.toString(tags) +
                 '}';
     }
 }
