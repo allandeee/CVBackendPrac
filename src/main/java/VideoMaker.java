@@ -25,4 +25,8 @@ public class VideoMaker {
         root_dir.deleteVideoFromPath(id, video);
     }
 
+    public Folder goToFolder (String path) {
+        return root_dir.findDirPath(path);
+    }
+
 }

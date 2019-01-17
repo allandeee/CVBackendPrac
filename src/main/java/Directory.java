@@ -39,4 +39,11 @@ public class Directory {
         folder.deleteVideo(id);
     }
 
+    /**
+     * Due to time, I can only explain my Task 6 implementation:
+     * Filtering all videos by tag (based on my implementation) will
+     * require full iteration of the folder structure, and taking
+     * videos with the searched tag
+     */
+
 }
