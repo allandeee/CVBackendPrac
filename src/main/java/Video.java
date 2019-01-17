@@ -27,17 +27,77 @@ public class Video {
         this.tags = tags;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public int getDuration() {
+        return duration;
+    }
+
+    public String getDesc() {
+        return desc;
+    }
+
+    public String getDateCreated() {
+        return dateCreated;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getThumb() {
+        return thumb;
+    }
+
+    public String getFolder() {
+        return folder;
+    }
+
+    public String[] getTags() {
+        return tags;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setDuration(int duration) {
+        this.duration = duration;
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
+
+    public void setDateCreated(String dateCreated) {
+        this.dateCreated = dateCreated;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setThumb(String thumb) {
+        this.thumb = thumb;
+    }
+
+    public void setTags(String[] tags) {
+        this.tags = tags;
+    }
+
     @Override
     public String toString() {
         return "Video{" +
                 "name='" + name + '\'' +
                 ", duration='" + duration + '\'' +
-                ", description=" + desc + '\'' +
-                ", dateCreated=" + dateCreated + '\'' +
-                ", id=" + id + '\'' +
-                ", thumbnail=" + thumb + '\'' +
-                ", folder=" + folder + '\'' +
-                ", tags=" + Arrays.toString(tags) +
+                ", description='" + desc + '\'' +
+                ", dateCreated='" + dateCreated + '\'' +
+                ", id='" + id + '\'' +
+                ", thumbnail='" + thumb + '\'' +
+                ", folder='" + folder + '\'' +
+                ", tags='" + Arrays.toString(tags) + '\'' +
                 '}';
     }
 }
